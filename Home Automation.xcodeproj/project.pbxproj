@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B467108F86E0BCA99D4463A /* Pods_Home_Automation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C12ED39C2A6250E9273AE10 /* Pods_Home_Automation.framework */; };
 		92CAF8C022225EAE00275234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CAF8BF22225EAE00275234 /* AppDelegate.swift */; };
 		92CAF8C222225EAE00275234 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CAF8C122225EAE00275234 /* ViewController.swift */; };
 		92CAF8C522225EAE00275234 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92CAF8C322225EAE00275234 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C12ED39C2A6250E9273AE10 /* Pods_Home_Automation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Home_Automation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BCB22C50D8D638D5126557A /* Pods-Home Automation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home Automation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Home Automation/Pods-Home Automation.debug.xcconfig"; sourceTree = "<group>"; };
 		92CAF8BC22225EAE00275234 /* Home Automation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home Automation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CAF8BF22225EAE00275234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92CAF8C122225EAE00275234 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		92CAF8C622225EB000275234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92CAF8C922225EB000275234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92CAF8CB22225EB000275234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDA3BA5CEA6C29975F4EF797 /* Pods-Home Automation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home Automation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Home Automation/Pods-Home Automation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B467108F86E0BCA99D4463A /* Pods_Home_Automation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41B3C404E2A2331438753198 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C12ED39C2A6250E9273AE10 /* Pods_Home_Automation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		818E147BAB6BD84F586B741E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BCB22C50D8D638D5126557A /* Pods-Home Automation.debug.xcconfig */,
+				EDA3BA5CEA6C29975F4EF797 /* Pods-Home Automation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		92CAF8B322225EAE00275234 = {
 			isa = PBXGroup;
 			children = (
 				92CAF8BE22225EAE00275234 /* Home Automation */,
 				92CAF8BD22225EAE00275234 /* Products */,
+				818E147BAB6BD84F586B741E /* Pods */,
+				41B3C404E2A2331438753198 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92CAF8CE22225EB000275234 /* Build configuration list for PBXNativeTarget "Home Automation" */;
 			buildPhases = (
+				A28C8AA1847A9A3048ADEE4B /* [CP] Check Pods Manifest.lock */,
 				92CAF8B822225EAE00275234 /* Sources */,
 				92CAF8B922225EAE00275234 /* Frameworks */,
 				92CAF8BA22225EAE00275234 /* Resources */,
+				018AEF08CAA4D566A8C66221 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		018AEF08CAA4D566A8C66221 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Home Automation/Pods-Home Automation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Home Automation/Pods-Home Automation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A28C8AA1847A9A3048ADEE4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Home Automation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92CAF8B822225EAE00275234 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		92CAF8CF22225EB000275234 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BCB22C50D8D638D5126557A /* Pods-Home Automation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +371,7 @@
 		};
 		92CAF8D022225EB000275234 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDA3BA5CEA6C29975F4EF797 /* Pods-Home Automation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
